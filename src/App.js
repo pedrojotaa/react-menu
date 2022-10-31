@@ -22,7 +22,7 @@ function App() {
   return (
     <main>
       <section>
-        <div>our menu</div>
+        <h1>our menu</h1>
         <div>_________</div>
         <div>
           <Categories categories={categories} filterItems={filterItems} />

@@ -1,11 +1,12 @@
 import React from "react";
+import styles from './Categories.module.css'
 
 function Categories({ categories, filterItems }) {
   return (
-    <div>
+    <div className={styles.container_btn} >
       {categories.map((category, id) => {
         return (
-          <button key={id} onClick={() => filterItems(category)}>
+          <button className={styles.btn} key={id} onClick={() => filterItems(category)}>
             {category}
           </button>
         );
